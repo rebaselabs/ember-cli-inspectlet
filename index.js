@@ -8,7 +8,7 @@ module.exports = {
     var wid = config.APP.INSPECTLET_WID;
 
     if (wid != null && type === 'head') {
-      return "<script>\n" +
+      return "<script type='text/javascript' id='inspectletjs'>\n" +
         "window.__insp = window.__insp || [];\n" +
         "__insp.push(['wid', " + wid + "]);\n" +
         "(function() {\n" +
